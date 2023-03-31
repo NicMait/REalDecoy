@@ -32,10 +32,12 @@ describe('Inventory', () => {
 
 
   it('Add an item to cart from the inventory page', () => {
-    cy.get('.title').should('be.visible')
-    cy.get('.title').contains('Products')
-    cy.get(Products.addBtn).click()
-    cy.get(Products.cartBadge).should('contain', '1')
+    cy.get(Products.productPage).should('be.visible')
+    cy.get(Products.productPage).contains('Products')
+    cy.url().should('contain', 'inventory')
+    cy.get(Products.addLight).click()
+    cy.get(Products.cartBadge).should('have.text',1)
+
 
   })
 
@@ -47,5 +49,6 @@ describe('Inventory', () => {
     cy.get(Products.onesieDetails).should('contain.text', "Sauce Labs Onesie")
 
   })
+
 })
 
