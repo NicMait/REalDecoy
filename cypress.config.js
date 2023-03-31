@@ -9,4 +9,11 @@ module.exports = defineConfig({
 		specPattern: "cypress/e2e/**/*.cy.{js,jsx,tx,tsx}",
 		chromeWebSecurity: false
   },
+  reporter: 'mochawesome',
+  reporterOptions: {
+    reportDir: 'cypress/reports',
+    overwrite: false,
+    html: true,
+    json: false
+  }
 });
