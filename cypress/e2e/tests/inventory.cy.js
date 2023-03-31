@@ -35,6 +35,7 @@ describe('Inventory', () => {
     cy.get(Products.productPage).should('be.visible')
     cy.get(Products.productPage).contains('Products')
     cy.url().should('contain', 'inventory')
+    //Add a product to cart
     cy.get(Products.addLight).click()
     cy.get(Products.cartBadge).should('have.text',1)
 
@@ -45,6 +46,7 @@ describe('Inventory', () => {
   it('Click on a product image to view product details page', () => {
     cy.get(Products.sauceOnesie).should('be.visible')
     cy.get(Products.sauceOnesie).click()
+    //View details page
     cy.get(Products.onesieDetails).should('be.visible')
     cy.get(Products.onesieDetails).should('contain.text', "Sauce Labs Onesie")
 
