@@ -25,7 +25,7 @@ The framework being used is Cypress.
 # Installation
 1. To install node please visit  https://nodejs.org/en/ or check the version using node --v
 2. Clone the repository in code editor terminal: git clone https://github.com/NicMait/RealDecoy
-3. With your terminal pointing to the root of the project run npm i to install all project dependencies
+3. With your terminal pointing to the root of the project run `npm i` to install all project dependencies
 
 # Folder Structure
 - **cypress/e2e/pages:**  Page object files that include element selectors and functions that are used in tests.
@@ -42,7 +42,7 @@ Execute tests in the Cypress via commandline
 
 ```npx cypress run```
 
-Executes all tests in the Chrome browser and generates a Mochawesome report.
+Execute all tests in the Chrome browser and generates a Mochawesome report.
 
 ```npm test```
 
@@ -74,6 +74,10 @@ With Reports
 ```npm run test:spec cypress/e2e/tests/login.cy.js```
 
 To manually view the html report files, in your file explorer, navigate to the project folder then to cypress, then navigate to reports. Double click on the html file and the file will be opened in the browser.
+
+# CI/CD
+
+The CI/CD pipeline is setup in this project via GitHub Actions. The CI/CD pipeline is configured to execute each time new code is pushed to a branch.
 
 
 NB: The first two footer tests that are commented out should be run individually in the terminal. When they are executed with the rest of the test suite an error is thrown which prevents the other scenarios from being executed.
