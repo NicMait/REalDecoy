@@ -24,11 +24,11 @@ The framework being used is Cypress.
 
 
 ### Installation:
-To install node please visit install node from https://nodejs.org/en/ or check the version using node --v
-Clone the repository in code editor terminal: git clone https://github.com/NicMait/RealDecoy
-Initialize with NPM npm init -y
-Install Cypress npm install cypress --save-dev
-Install mocha reporter npm install --save-dev mochawesome mochawesome-merge mochawesome-report-generator
+1.To install node please visit install node from https://nodejs.org/en/ or check the version using node --v
+2.Clone the repository in code editor terminal: git clone https://github.com/NicMait/RealDecoy
+3.Initialize with NPM npm init -y
+4.Install Cypress npm install cypress --save-dev
+5.Install mocha reporter npm install --save-dev mochawesome mochawesome-merge mochawesome-report-generator
                        npm install --save-dev npm-run-all
 
 # Folder Structure
