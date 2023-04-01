@@ -1,3 +1,5 @@
 /node_modules
-cypress/reports/cypress/videos mochaawesome-report/
+cypress/reports/
+cypress/videos
+mochaawesome-report/
 
